@@ -1,0 +1,41 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=grey node] (a) at (-2, 0) {a};
+		\node [style=filled] (b) at (0, 2) {b};
+		\node [style=grey node] (c) at (2, 0) {c};
+		\node [style=filled] (d) at (0, -2) {d};
+		\node [style=filled] (e) at (4, 0) {e};
+		\node [style=none] (0) at (3, 2) {};
+		\node [style=none] (1) at (4, 2) {};
+		\node [style=none] (2) at (3, 3) {};
+		\node [style=none] (3) at (4, 3) {};
+		\node [style=none] (4) at (5, 3) {};
+		\node [style=none] (5) at (5, 2) {};
+		\node [style=none] (6) at (4, 3) {};
+		\node [style=none] (7) at (3, 3) {};
+		\node [style=none] (8) at (4, 3) {};
+		\node [style=none] (9) at (4, 3) {};
+		\node [style=none] (10) at (5, 3) {};
+		\node [style=none] (11) at (5, 3) {$M_s$};
+		\node [style=none] (12) at (5, 2) {$M_t$};
+		\node [style=none] (13) at (-1.25, -1.25) {x};
+		\node [style=none] (14) at (1.25, 1.25) {x};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (b) to (c);
+		\draw [style=red thick] (b) to (c);
+		\draw (c) to (b);
+		\draw (b) to (c);
+		\draw (b) to (a);
+		\draw (a) to (d);
+		\draw (c) to (d);
+		\draw (c) to (e);
+		\draw [style=red thick] (a) to (d);
+		\draw (a) to (d);
+		\draw (d) to (c);
+		\draw (a) to (b);
+		\draw [style=red thick] (9.center) to (7.center);
+		\draw [style=blue thick] (1.center) to (0.center);
+		\draw (c) to (e);
+	\end{pgfonlayer}
+\end{tikzpicture}

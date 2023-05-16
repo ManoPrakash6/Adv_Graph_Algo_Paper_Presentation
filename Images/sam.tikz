@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=green dot] (0) at (-1.25, 0.25) {};
+		\node [style=green dot] (1) at (2, 1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (1) to (0);
+	\end{pgfonlayer}
+\end{tikzpicture}
